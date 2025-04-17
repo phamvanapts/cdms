@@ -1,0 +1,6 @@
+    RewriteEngine On
+
+    # Chuyển hướng tất cả các yêu cầu đến public/index.php
+    #RewriteCond %{REQUEST_FILENAME} !-f
+    #RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ public/index.php [L]
